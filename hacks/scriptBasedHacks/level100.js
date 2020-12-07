@@ -16,7 +16,7 @@ let playerdata = await (await fetch(`https://api.prodigygame.com/game-api/v1/cha
         
     },
 })).json();
-playerdata.data.level = 100
+playerdata.data.level = -999
 await (await fetch(`https://api.prodigygame.com/game-cortex-server/v3/characters/${userID}`, {
     method: 'POST',
     credentials: 'same-origin',
